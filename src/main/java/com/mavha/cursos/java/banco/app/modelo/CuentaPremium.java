@@ -36,6 +36,11 @@ public class CuentaPremium extends Cuenta{
         return true;
     }
 
+    @Override
+    public Double comision() {
+        return 0.0;
+    }
+
 
     
 }

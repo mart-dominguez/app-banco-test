@@ -10,7 +10,10 @@ package com.mavha.cursos.java.banco.app.modelo;
  * @author martdominguez
  */
 public class CuentaSueldo extends Cuenta{
-
+    @Override
+    public Double comision() {
+        return this.saldo*0.005;
+    }
     public CuentaSueldo() {
     }
 
@@ -20,8 +23,13 @@ public class CuentaSueldo extends Cuenta{
 
     @Override
     public void depositar(Double monto) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.saldo+=monto;
+        this.kmsAerolinea = monto.intValue()/50;
     }
+
+
+
+    
     
     
 }

@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author martdominguez
  */
-public  abstract class Cuenta {
+public  abstract class Cuenta implements Comisionable{
     protected Integer id;
     protected String CBU;
     protected Double saldo;
